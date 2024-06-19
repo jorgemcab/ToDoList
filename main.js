@@ -41,7 +41,7 @@ const taskNameLimpio = () => {
 const validName = (taskNameLimpio) => {
     let isValid = true;
     if( !taskNameLimpio.length) {
-        alert("ingresar una tarea rata maldita");
+        alert("ingresar una tarea");
         isValid = false;
     } return isValid;
 }
@@ -51,7 +51,7 @@ const taskTimeLimpio = () => {
 const validTime = (taskTimeLimpio) => {
     let isValid = true;
     if( !taskTimeLimpio.length) {
-        alert("ingresar el horario rata vaga");
+        alert("ingresar el horario");
         isValid = false;
     } return isValid;
 }
