@@ -116,6 +116,10 @@ button{
 /*MEDIAS QUERIES*/
 
 @media(max-width: 830px){
+    body{
+        padding: 0 15% 0 15%;
+
+    }
     #nombre{
         width: 50%;
     }
@@ -131,11 +135,19 @@ button{
     }
 }
 @media(max-width: 660px){
+    body{
+        padding: 0 15% 0 15%;
+
+    }
     .task-name-span {
         width: 50%;
     }
 }
 @media(max-width: 360px){
+    body{
+        padding: 0 10% 0 10%;
+
+    }
     .task-name-span {
         width: 30%;
     }
