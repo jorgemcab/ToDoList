@@ -38,21 +38,24 @@ const toggleDeleteAllButton = () =>{
 const taskNameLimpio = () => {
     return taskInputName.value.trim().replace(/\s+/g, " ");
 }
+const taskTimeLimpio = () => {
+    return taskInputTime.value.trim().replace(/\s+/g, " ");
+}
+
 const validName = (taskNameLimpio) => {
     let isValid = true;
     if( !taskNameLimpio.length) {
         alert("ingresar una tarea");
         isValid = false;
+        return
     } return isValid;
-}
-const taskTimeLimpio = () => {
-    return taskInputTime.value.trim().replace(/\s+/g, " ");
 }
 const validTime = (taskTimeLimpio) => {
     let isValid = true;
     if( !taskTimeLimpio.length) {
         alert("ingresar el horario");
         isValid = false;
+        return
     } return isValid;
 }
 
@@ -71,7 +74,6 @@ const addTask = (e) => {
         }
     ];};
 
-    console.log(taskList);
     addForm.reset();
     updateUI();
 };
